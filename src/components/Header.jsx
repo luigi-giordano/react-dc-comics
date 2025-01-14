@@ -1,11 +1,8 @@
-import Header from '../components/Header'
-
 const Header = () => {
   return (
-    <>
-      <Header />
-      <h1>Ciao sono App</h1>
-    </>
+    <header>
+      Sono l'header
+    </header>
   )
 }
-export default App;
+export default Header;
