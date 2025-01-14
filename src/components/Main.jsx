@@ -1,7 +1,7 @@
 const Main = () => {
   return (
     <main>
-      Sono il main
+      <h2>Sono il main</h2>
     </main>
   )
 }
