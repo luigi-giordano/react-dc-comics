@@ -1,7 +1,9 @@
 const Main = () => {
   return (
     <main>
-      <h2>Sono il main</h2>
+      <section id="content">
+        <h1>--&gt; Content goes here &lt;--</h1>
+      </section>
     </main>
   )
 }
