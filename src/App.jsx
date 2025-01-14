@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import './index.css'
 
 // // LINKS HEADER
 // const links = [
