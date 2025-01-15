@@ -62,13 +62,14 @@ main {
 footer {
   background-image: url('./assets/img/footer-bg.jpg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom;
   background-size: cover;
   color: white;
   padding: 2rem 0;
 
   .footer-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -77,6 +78,7 @@ footer {
 
   div {
     flex: 1;
+    margin: 0 15px;
   }
 
   ul {
@@ -91,17 +93,19 @@ footer {
 
   h4 {
     margin-bottom: 10px;
+    font-weight: bold;
   }
 
   .sign-up {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     padding: 10px 20px;
     background-color: #0282f9;
     border: none;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
   }
 
@@ -126,7 +130,13 @@ footer {
   }
 
   img {
-    width: 20px;
+    width: 24px;
     height: auto;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
 }
