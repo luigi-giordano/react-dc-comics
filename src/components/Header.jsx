@@ -1,6 +1,5 @@
 const Header = (prop) => {
 
-  // Array di link con nome e URL
   const { links } = prop;
 
   return (
