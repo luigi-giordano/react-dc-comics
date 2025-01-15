@@ -1,4 +1,18 @@
 const Header = () => {
+  // Array di link con nome e URL
+  const links = [
+    { href: "#characters", text: "characters" },
+    { href: "#comics", text: "comics" },
+    { href: "#movies", text: "Movies" },
+    { href: "#tv", text: "tv" },
+    { href: "#games", text: "games" },
+    { href: "#collectibles", text: "collectibles" },
+    { href: "#videos", text: "videos" },
+    { href: "#fans", text: "fans" },
+    { href: "#news", text: "news" },
+    { href: "#shop", text: "shop" }
+  ];
+
   return (
     <header>
       <nav className="navbar">
@@ -6,16 +20,11 @@ const Header = () => {
           <img src="/dc-logo.png" alt="DC Logo" />
         </div>
         <ul>
-          <li><a href="#">CHARACTERS</a></li>
-          <li><a href="#">COMICS</a></li>
-          <li><a href="#">MOVIES</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">GAMES</a></li>
-          <li><a href="#">COLLECTIBLES</a></li>
-          <li><a href="#">VIDEOS</a></li>
-          <li><a href="#">FANS</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">SHOP</a></li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a href={link.href}>{link.text}</a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
