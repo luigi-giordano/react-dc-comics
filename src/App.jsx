@@ -4,16 +4,16 @@ import Footer from './components/Footer'
 
 // HEADER
 const links = [
-  { href: "#characters", text: "characters" },
-  { href: "#comics", text: "comics" },
-  { href: "#movies", text: "Movies" },
-  { href: "#tv", text: "tv" },
-  { href: "#games", text: "games" },
-  { href: "#collectibles", text: "collectibles" },
-  { href: "#videos", text: "videos" },
-  { href: "#fans", text: "fans" },
-  { href: "#news", text: "news" },
-  { href: "#shop", text: "shop" }
+  { href: "#characters", text: "CHARACTERS" },
+  { href: "#comics", text: "COMICS" },
+  { href: "#movies", text: "MOVIES" },
+  { href: "#tv", text: "TV" },
+  { href: "#games", text: "GAMES" },
+  { href: "#collectibles", text: "COLLECTIBLES" },
+  { href: "#videos", text: "VIDEOS" },
+  { href: "#fans", text: "FANS" },
+  { href: "#news", text: "NEWS" },
+  { href: "#shop", text: "SHOP" }
 ];
 
 
