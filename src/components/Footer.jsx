@@ -1,4 +1,7 @@
-const Footer = () => {
+const Footer = (prop) => {
+
+  const { dcComicsLinks, shopLinks, dcLinks, sitesLinks, socialLinks } = prop;
+
   return (
     <footer>
       <div className="footer-links">

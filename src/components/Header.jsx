@@ -1,17 +1,7 @@
-const Header = () => {
+const Header = (prop) => {
+
   // Array di link con nome e URL
-  const links = [
-    { href: "#characters", text: "characters" },
-    { href: "#comics", text: "comics" },
-    { href: "#movies", text: "Movies" },
-    { href: "#tv", text: "tv" },
-    { href: "#games", text: "games" },
-    { href: "#collectibles", text: "collectibles" },
-    { href: "#videos", text: "videos" },
-    { href: "#fans", text: "fans" },
-    { href: "#news", text: "news" },
-    { href: "#shop", text: "shop" }
-  ];
+  const { links } = prop;
 
   return (
     <header>
@@ -21,7 +11,7 @@ const Header = () => {
         </div>
         <ul>
           {links.map((link, index) => (
-            <li key={index}>
+            <li key={`link-${index}`} >
               <a href={link.href}>{link.text}</a>
             </li>
           ))}
