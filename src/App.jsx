@@ -56,13 +56,6 @@ const sitesLinks = [
   { text: 'DC Power Visa', href: '#' }
 ];
 
-const socialLinks = [
-  { href: "#", imgSrc: "/footer-facebook.png", alt: "Facebook Icon" },
-  { href: "#", imgSrc: "/footer-twitter.png", alt: "Twitter Icon" },
-  { href: "#", imgSrc: "/footer-youtube.png", alt: "Youtube Icon" },
-  { href: "#", imgSrc: "/footer-pinterest.png", alt: "Pinterest Icon" },
-  { href: "#", imgSrc: "/footer-periscope.png", alt: "Periscope Icon" }
-];
 
 const socialLinks = [
   { href: "#facebook", icon: "/footer-facebook.png", alt: "Facebook" },
