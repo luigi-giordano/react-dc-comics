@@ -5,53 +5,128 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-footer {
+body {
   min-height: 100vh;
-  background-image: url('./assets/img/footer-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background-color: #f4f4f4;
 }
 
-
-a {
-  text-decoration: none;
-}
-
-figure {
-  text-align: start;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  margin: 20px;
-}
-
-ul li {
-  font-weight: bold;
-}
-
-ul li a {
-
-  padding: 10px;
-}
-
-ul li a:hover {
-  color: #0282f9;
-  border-bottom: 2px solid #0282f9;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+header {
+  background-color: white;
   padding: 20px 0;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      padding: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    & ul li a:hover {
+      color: #0282f9;
+      border-bottom: 2px solid #0282f9;
+    }
+
+  }
 }
 
 main {
   background-color: #0282f9;
   text-align: center;
   padding: 4rem;
+  color: white;
+}
 
+footer {
+  background-image: url('./assets/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+  padding: 2rem 0;
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  div {
+    flex: 1;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .sign-up {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #0282f9;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  & .sign-up:hover {
+    background-color: #005bb5;
+  }
+
+  .footer-social {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .social-icons ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  img {
+    width: 20px;
+    height: auto;
+  }
 }

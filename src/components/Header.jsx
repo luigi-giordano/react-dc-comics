@@ -1,27 +1,25 @@
-
 const Header = () => {
   return (
     <header>
-      <figure>
-        <img src="/dc-logo.png" alt="Logo-Dc" />
-      </figure>
-      <nav>
+      <nav className="navbar">
+        <div className="logo">
+          <img src="/dc-logo.png" alt="DC Logo" />
+        </div>
         <ul>
-          <li><a href="#"></a>CHARACTERS</li>
-          <li><a href="#"></a>COMICS</li>
-          <li><a href="#"></a>MOVIES</li>
-          <li><a href="#"></a>TV</li>
-          <li><a href="#"></a>GAMES</li>
-          <li><a href="#"></a>COLLECTIBLES</li>
-          <li><a href="#"></a>VIDEOS</li>
-          <li><a href="#"></a>FANS</li>
-          <li><a href="#"></a>NEWS</li>
-          <li><a href="#"></a>SHOP</li>
+          <li><a href="#">CHARACTERS</a></li>
+          <li><a href="#">COMICS</a></li>
+          <li><a href="#">MOVIES</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">GAMES</a></li>
+          <li><a href="#">COLLECTIBLES</a></li>
+          <li><a href="#">VIDEOS</a></li>
+          <li><a href="#">FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">SHOP</a></li>
         </ul>
       </nav>
-
     </header>
-  )
-}
+  );
+};
 
 export default Header;
