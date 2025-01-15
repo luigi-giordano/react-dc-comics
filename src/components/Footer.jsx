@@ -9,7 +9,7 @@ const Footer = (prop) => {
           <h4>DC COMICS</h4>
           <ul>
             {dcComicsLinks.map((link, index) => (
-              <li key={index}>{link}</li>
+              <li key={index}>{link.text}</li>
             ))}
           </ul>
         </div>
@@ -17,7 +17,7 @@ const Footer = (prop) => {
           <h4>SHOP</h4>
           <ul>
             {shopLinks.map((link, index) => (
-              <li key={index}>{link}</li>
+              <li key={index}>{link.text}</li>
             ))}
           </ul>
         </div>
@@ -25,7 +25,7 @@ const Footer = (prop) => {
           <h4>DC</h4>
           <ul>
             {dcLinks.map((link, index) => (
-              <li key={index}>{link}</li>
+              <li key={index}>{link.text}</li>
             ))}
           </ul>
         </div>
@@ -33,7 +33,7 @@ const Footer = (prop) => {
           <h4>SITES</h4>
           <ul>
             {sitesLinks.map((link, index) => (
-              <li key={index}>{link}</li>
+              <li key={index}>{link.text}</li>
             ))}
           </ul>
         </div>
@@ -53,6 +53,7 @@ const Footer = (prop) => {
                 <img src={link.icon} alt={link.alt} />
               </a>
             </li>
+          ))}
         </ul>
       </div>
     </footer >
