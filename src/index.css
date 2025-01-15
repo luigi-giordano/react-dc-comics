@@ -71,6 +71,17 @@ main {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+
+    p {
+      display: flex;
+
+
+    }
+
+    img {
+      max-width: 50%;
+      max-height: 50%;
+    }
   }
 
   .main-box {
@@ -91,7 +102,7 @@ main {
 }
 
 footer {
-  background-image: url('./assets/img/footer-bg.jpg');
+  background-image: url('./footer-bg.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
