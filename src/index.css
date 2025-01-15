@@ -54,9 +54,51 @@ header {
 
 main {
   background-color: #0282f9;
-  text-align: center;
-  padding: 4rem;
-  color: white;
+  text-align: end;
+
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-box {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1rem;
+  }
+
+  p {
+    margin-left: 150px;
+    margin-top: 35px;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .box1 {
+    background-image: url('./assets/img/buy-comics-digital-comics.png');
+  }
+
+  .box2 {
+    background-image: url('./assets/img/buy-comics-merchandise.png');
+  }
+
+  .box3 {
+    background-image: url('./assets/img/buy-comics-shop-locator.png');
+  }
+
+  .box4 {
+    background-image: url('./assets/img/buy-comics-subscriptions.png');
+  }
+
+  .box5 {
+    background-image: url('./assets/img/buy-dc-power-visa.svg');
+  }
 }
 
 footer {
