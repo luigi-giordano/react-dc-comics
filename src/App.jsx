@@ -64,6 +64,14 @@ const socialLinks = [
   { href: "#", imgSrc: "/footer-periscope.png", alt: "Periscope Icon" }
 ];
 
+const socialLinks = [
+  { href: "#facebook", icon: "/footer-facebook.png", alt: "Facebook" },
+  { href: "#twitter", icon: "/footer-twitter.png", alt: "Twitter" },
+  { href: "#youtube", icon: "/footer-youtube.png", alt: "YouTube" },
+  { href: "#pinterest", icon: "/footer-pinterest.png", alt: "Pinterest" },
+  { href: "#instagram", icon: "/footer-periscope.png", alt: "Periscope" },
+];
+
 const App = () => {
   return (
     <>

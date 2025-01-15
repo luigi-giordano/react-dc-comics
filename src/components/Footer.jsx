@@ -8,48 +8,38 @@ const Footer = (prop) => {
         <div>
           <h4>DC COMICS</h4>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Videos</li>
-            <li>News</li>
+            {dcComicsLinks.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </div>
         <div>
           <h4>SHOP</h4>
           <ul>
-            <li>Shop DC</li>
-            <li>Shop DC Collectibles</li>
+            {shopLinks.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </div>
         <div>
           <h4>DC</h4>
           <ul>
-            <li>Terms Of Use</li>
-            <li>Privacy Policy</li>
-            <li>Ad Choices</li>
-            <li>Advertising</li>
-            <li>Jobs</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshop</li>
-            <li>CPSC Certificates</li>
-            <li>Ratings</li>
-            <li>Shop Help</li>
-            <li>Contact Us</li>
+            {dcLinks.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </div>
         <div>
           <h4>SITES</h4>
           <ul>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
+            {sitesLinks.map((link, index) => (
+              <li key={index}>{link}</li>
+            ))}
           </ul>
         </div>
+      </div>
+      <div className="footer-logo">
+        <img src="/dc-logo-bg.png" alt="DC Logo" />
       </div>
       <div className="footer-social">
         <button className="sign-up">SIGN-UP NOW!</button>
@@ -57,11 +47,12 @@ const Footer = (prop) => {
       </div>
       <div className="social-icons">
         <ul>
-          <li><a href="#facebook"><img src="/footer-facebook.png" alt="Facebook" /></a></li>
-          <li><a href="#twitter"><img src="/footer-twitter.png" alt="Twitter" /></a></li>
-          <li><a href="#youtube"><img src="/footer-youtube.png" alt="YouTube" /></a></li>
-          <li><a href="#pinterest"><img src="/footer-pinterest.png" alt="Pinterest" /></a></li>
-          <li><a href="#instagram"><img src="/footer-periscope.png" alt="Periscope" /></a></li>
+          {socialLinks.map((link, index) => (
+            <li key={index}>
+              <a href={link.href}>
+                <img src={link.icon} alt={link.alt} />
+              </a>
+            </li>
         </ul>
       </div>
     </footer >
