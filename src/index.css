@@ -48,7 +48,6 @@ header {
       color: #0282f9;
       border-bottom: 2px solid #0282f9;
     }
-
   }
 }
 
@@ -56,7 +55,17 @@ main {
   background-color: #0282f9;
   text-align: end;
 
-  .main-container {
+  .container-main-text {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    height: 150px;
+  }
+
+  .main-container-boxes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -79,26 +88,6 @@ main {
     font-size: 1rem;
     color: white;
   }
-
-  .box1 {
-    background-image: url('./assets/img/buy-comics-digital-comics.png');
-  }
-
-  .box2 {
-    background-image: url('./assets/img/buy-comics-merchandise.png');
-  }
-
-  .box3 {
-    background-image: url('./assets/img/buy-comics-shop-locator.png');
-  }
-
-  .box4 {
-    background-image: url('./assets/img/buy-comics-subscriptions.png');
-  }
-
-  .box5 {
-    background-image: url('./assets/img/buy-dc-power-visa.svg');
-  }
 }
 
 footer {
@@ -111,15 +100,12 @@ footer {
 
   .footer-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 2rem;
   }
 
   div {
-    flex: 1;
     margin: 0 15px;
   }
 
@@ -156,13 +142,15 @@ footer {
   }
 
   .footer-social {
-    text-align: center;
+    text-align: end;
     padding: 1rem 0;
   }
 
+  .footer-social button {}
+
   .social-icons ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     list-style: none;
     margin-top: 10px;
   }

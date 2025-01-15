@@ -48,20 +48,20 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <button className="sign-up">SIGN-UP NOW!</button>
       <div className="footer-social">
+        <button className="sign-up">SIGN-UP NOW!</button>
         <p>FOLLOW US</p>
-        <div className="social-icons">
-          <ul>
-            <li><a href="#facebook"><img src="/footer-facebook.png" alt="Facebook" /></a></li>
-            <li><a href="#twitter"><img src="/footer-twitter.png" alt="Twitter" /></a></li>
-            <li><a href="#youtube"><img src="/footer-youtube.png" alt="YouTube" /></a></li>
-            <li><a href="#pinterest"><img src="/footer-pinterest.png" alt="Pinterest" /></a></li>
-            <li><a href="#instagram"><img src="/footer-periscope.png" alt="Periscope" /></a></li>
-          </ul>
-        </div>
       </div>
-    </footer>
+      <div className="social-icons">
+        <ul>
+          <li><a href="#facebook"><img src="/footer-facebook.png" alt="Facebook" /></a></li>
+          <li><a href="#twitter"><img src="/footer-twitter.png" alt="Twitter" /></a></li>
+          <li><a href="#youtube"><img src="/footer-youtube.png" alt="YouTube" /></a></li>
+          <li><a href="#pinterest"><img src="/footer-pinterest.png" alt="Pinterest" /></a></li>
+          <li><a href="#instagram"><img src="/footer-periscope.png" alt="Periscope" /></a></li>
+        </ul>
+      </div>
+    </footer >
   );
 };
 
